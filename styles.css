@@ -1,0 +1,104 @@
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background: linear-gradient(135deg, #007BFF, #5c3e3e); Adjust the angle and colors as needed */
+    background: linear-gradient( to bottom left, #e75defe4, #7f6273);
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .container {
+    /* background-color: rgb(172, 161, 161); */
+    background: rgba(245, 245, 245, 0.805);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(116, 15, 193, 0.655);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+  #inputslider{
+    border-radius: 4px;
+   
+    width: 100%;
+    max-width: 250px;
+  }
+  .inputbox{
+    position: relative;
+  }
+  .inputbox span i{
+    position: absolute;
+    top: 16px;
+    right: 6px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  label {
+    display: block;
+    margin: 10px 0;
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  input[type="number"], input[type="checkbox"] {
+    margin-right: 10px;
+  }
+
+  .passBox {
+    margin: 3px 0;
+    padding: 9px;
+    width: 300px;
+    border: 1px solid #7e4f4f;
+    background: #f9f9f9;
+    font-weight:none;
+    font-size: 1.2em;
+    word-wrap: break-word;
+    border-radius: 2px;
+    margin-block: 8px;
+
+  }
+  .row{
+    display: inline-flexbox;
+    /* margin-block: 7px;        /top or bottom       / */
+  }
+  .row p{
+    flex-basis:100% ;
+  }
+
+  button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    button {
+      width: auto;
+      padding: 12px 25px;
+    }
+
+    #passwordDisplay {
+      font-size: 1.5em;
+    }
+  }
